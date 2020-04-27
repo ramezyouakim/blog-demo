@@ -32,7 +32,7 @@ class App extends React.Component {
     const {
       loading,
     } = this.props;
-    if (loading) return null;
+    if (loading) return <p>Loading</p>;
     return (
       <div className="comments_List_container">
         <ul id="comments_list">
