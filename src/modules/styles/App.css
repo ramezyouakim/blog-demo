@@ -1,0 +1,87 @@
+body{
+  background-color: #F5F5F5;
+}
+
+.comments_List_container{
+  width: 97%;
+  float: left;
+}
+
+#comments_list{
+  list-style-type: none;
+  width: 88%;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.comment_card{
+  width: 98%;
+  border: 1px solid #ced4da;
+  text-align: center;
+  margin: 20px;
+}
+
+.comment_card h3 {
+  background-color: #F1F1F1;
+  padding: 20px;
+  margin: 0px;
+  text-align: left;
+  border-bottom: 1px solid #ced4da;
+}
+
+.comment_card p {
+  margin: 40px;
+  text-align: left;
+}
+
+.comment_card video {
+max-width: 50%;
+margin-bottom: 20px;
+}
+
+@media only screen and (max-width:401px){
+  .comment_card {
+      width: 92%;
+  }
+  .comment_card p {
+      margin-left: 20px;
+      text-align: left;
+  }
+  .comment_card video {
+      max-width: 90%;
+      margin:5px;
+    }
+}
+
+@media only screen and (min-width:402px) and (max-width:768px){
+  .comment_card {
+      width: 92%;
+  }
+  .comment_card p {
+      margin-left: 30px;
+      text-align: left;
+  }
+  .comment_card video {
+      max-width: 85%;
+      margin:10px;
+      margin-bottom: 15px;
+    }
+}
+
+.comment_card:hover {
+  -webkit-animation: comment_card_hover 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+animation: comment_card_hover 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes comment_card_hover{
+  0% {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+    100% {
+      -webkit-box-shadow: 3px 3px 5px -3px rgba(0,0,0,0.75);
+      -moz-box-shadow: 3px 3px 5px -3px rgba(0,0,0,0.75);
+      box-shadow: 3px 3px 5px -3px rgba(0,0,0,0.75);
+    }
+}
