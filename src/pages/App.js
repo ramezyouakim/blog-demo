@@ -32,7 +32,7 @@ class App extends React.Component {
     const {
       loading,
     } = this.props;
-    if (loading) return <p>Loading</p>;
+    if (loading) return <p style={{textAlign:'center'}}>Loading</p>;
     return (
       <div className="comments_List_container">
         <ul id="comments_list">
